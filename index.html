@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171411">
+  <meta name="description" content="Brasa 27: demo ficticio de restaurante con menú digital y pedido de muestra, creado por Innovamoments.">
+  <title>Brasa 27 | Menú digital · Demo Innovamoments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="demo-bar">DEMO FICTICIO <span>·</span> Una muestra de lo que podría tener tu restaurante</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Brasa 27, volver al inicio"><span class="brand-icon">B<span>27</span></span><span>BRASA <b>27</b><small>BURGER HOUSE</small></span></a>
+    <nav aria-label="Navegación principal"><a href="#menu">Menú</a><a href="#promocion">Promoción</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a></nav>
+    <button class="header-order" type="button" data-open-cart>Mi pedido <span class="count" data-count>0</span></button>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <img src="assets/burger-hero.webp" alt="Hamburguesa doble con queso y papas" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap"><p class="eyebrow">HECHAS AL MOMENTO · PARA DISFRUTAR EN GRANDE</p><h1>EL ANTOJO<br>EMPIEZA <em>AQUÍ.</em></h1><p class="hero-copy">Hamburguesas con carácter, ingredientes frescos y ese sabor que quieres volver a probar.</p><div class="hero-actions"><a class="button primary" href="#menu">Explorar menú <span aria-hidden="true">↗</span></a><button class="button outline" type="button" data-open-cart>Armar mi pedido</button></div><p class="hero-foot">MENÚ DIGITAL · PEDIDOS DE EJEMPLO · CÓDIGO QR</p></div>
+      <div class="hero-index">01 / BRASA 27</div>
+    </section>
+    <section class="intro-strip" aria-label="Características"><div class="wrap strip-inner"><span>🔥 <b>Sabor al momento</b></span><span>📱 <b>Menú desde tu celular</b></span><span>🛍️ <b>Arma tu pedido</b></span></div></section>
+    <section class="promotion wrap section-space" id="promocion"><div class="promo-text"><p class="eyebrow">LA FAVORITA DE LA SEMANA</p><h2>EL COMBO<br>QUE <em>SE ANTOJA.</em></h2><p>Doble Brasa + papas crujientes + bebida. Todo lo que necesitas en una sola orden.</p><div class="promo-bottom"><strong>$189 <small>MXN</small></strong><button class="button primary" type="button" data-add="combo">Agregar combo <span aria-hidden="true">+</span></button></div></div><div class="promo-image"><img src="assets/burger-menu.webp" alt="Hamburguesa doble del combo de la semana" loading="lazy"><span class="promo-stamp">COMBO<br><b>BRASA</b></span></div></section>
+    <section class="menu-section section-space" id="menu"><div class="wrap"><div class="section-head"><div><p class="eyebrow">PARA CADA ANTOJO</p><h2>EXPLORA EL <em>MENÚ.</em></h2></div><p>Elige tus favoritos. Los productos, precios y fotografías son de ejemplo.</p></div><div class="categories" role="group" aria-label="Filtrar productos"><button type="button" class="active" data-filter="Todos" aria-pressed="true">Todo</button><button type="button" data-filter="Hamburguesas" aria-pressed="false">Hamburguesas</button><button type="button" data-filter="Combos" aria-pressed="false">Combos</button><button type="button" data-filter="Acompañamientos" aria-pressed="false">Acompañamientos</button><button type="button" data-filter="Bebidas" aria-pressed="false">Bebidas</button></div><div class="product-grid" id="product-grid"></div></div></section>
+    <section class="about section-space" id="nosotros"><div class="wrap about-grid"><div><p class="eyebrow">EL SABOR NOS REÚNE</p><h2>HECHO PARA<br><em>COMPARTIR.</em></h2></div><div><p>En Brasa 27 creemos que una gran hamburguesa empieza con buenos ingredientes. Preparamos cada pedido al momento, con mucho sabor y sin complicaciones.</p><span>BUENOS INGREDIENTES. BUENOS MOMENTOS.</span></div></div></section>
+    <section class="qr-section section-space" id="qr"><div class="wrap qr-grid"><div><p class="eyebrow">TU MENÚ EN UN ESCANEO</p><h2>LA CARTA<br>EN TU <em>CELULAR.</em></h2><p>Escanea el QR para volver a este menú cuando quieras. Al actualizar platillos y precios en la página, el mismo código seguirá funcionando.</p><a class="text-link" href="#menu">Ver el menú <span aria-hidden="true">↗</span></a></div><div class="qr-card"><img src="assets/menu-qr.svg" alt="Código QR que abre este menú digital" width="210" height="210" loading="lazy"><strong>ESCANEA Y ELIGE</strong><small>Menú digital de Brasa 27 · Demo</small></div></div></section>
+    <section class="visit section-space" id="visitanos"><div class="wrap visit-grid"><div><p class="eyebrow">CERCA DE TI</p><h2>VEN POR<br><em>EL ANTOJO.</em></h2><p>Este es un negocio ficticio de demostración. La ubicación y los horarios de un cliente real pueden mostrarse aquí, junto con su mapa.</p></div><div class="visit-card"><span class="card-kicker">HORARIOS DE EJEMPLO</span><p><b>Lunes a jueves</b><span>1:00 p. m. – 10:00 p. m.</span></p><p><b>Viernes a domingo</b><span>1:00 p. m. – 11:30 p. m.</span></p><div class="visit-line"></div><span class="card-kicker">CONECTA TUS REDES</span><div class="socials"><button type="button" data-demo="Instagram">Instagram ↗</button><button type="button" data-demo="Facebook">Facebook ↗</button><button type="button" data-demo="TikTok">TikTok ↗</button></div></div></div></section>
+    <section class="closing"><div class="wrap"><p>¿LISTO PARA PEDIR?</p><h2>TU PRÓXIMO FAVORITO<br>ESTÁ EN EL <em>MENÚ.</em></h2><a href="#menu" class="button dark">Ver platillos <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand" href="#inicio"><span class="brand-icon">B<span>27</span></span><span>BRASA <b>27</b><small>BURGER HOUSE</small></span></a><p>Brasa 27 es un concepto ficticio. Menú, precios y horarios de demostración.</p><a href="https://www.instagram.com/innovamoments/" target="_blank" rel="noopener noreferrer">Diseño demo por <b>Innovamoments ↗</b></a></div></footer>
+  <button class="mobile-cart" type="button" data-open-cart><span>🛍️ Mi pedido <b data-count>0</b></span><strong data-total>$0 MXN</strong></button>
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" tabindex="-1"><div class="cart-head"><div><small>TU SELECCIÓN</small><h2 id="cart-title">Mi pedido</h2></div><button type="button" class="close-cart" aria-label="Cerrar pedido">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="cart-total">$0 MXN</strong></div><button class="button primary cart-send" type="button" id="send-order">Compartir por WhatsApp ↗</button><button class="copy-order" type="button" id="copy-order">Copiar resumen del pedido</button><p>Demo: WhatsApp abrirá sin un número de restaurante configurado. No se realiza ninguna compra ni pago.</p><div class="delivery-links"><button type="button" data-demo="Uber Eats">Uber Eats ↗</button><button type="button" data-demo="DiDi Food">DiDi Food ↗</button></div></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
